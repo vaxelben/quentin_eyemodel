@@ -3,8 +3,8 @@ import { useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
 export const ModelViewer = () => {
-  // const modelPath = '/models/quentin nebulae test 2.glb'
-  const modelPath = '/models/eye test sculpt on y va2 uv foireux decimated bordfelll.glb'
+  // const modelPath = 'models/quentin nebulae test 2.glb'
+  const modelPath = 'models/eye test sculpt on y va2 uv foireux decimated bordfelll.glb'
   const { scene, nodes, materials, animations } = useGLTF(modelPath)
   const modelRef = useRef<THREE.Group>(null)
   
@@ -40,4 +40,4 @@ export const ModelViewer = () => {
 }
 
 // Précharger le modèle pour de meilleures performances
-useGLTF.preload('/models/eye test sculpt on y va2 uv foireux decimated bordfelll.glb') 
+useGLTF.preload('models/eye test sculpt on y va2 uv foireux decimated bordfelll.glb') 
